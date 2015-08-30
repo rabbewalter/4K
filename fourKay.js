@@ -16,7 +16,7 @@ function fourKay(params) {
   var settings = {
     minWidth: 1440,    // common screen width starting point
     maxWidth: 4096,    // 4K screen width
-    presision: 2,      // 2 = 1.0||11, 3 = 1.00||123 - ie. how exact the script will be (2 is fine and will produce less code)
+    precision: 2,      // 2 = 1.0||11, 3 = 1.00||123 - ie. how exact the script will be (2 is fine and will produce less code)
     codeOut: 'console' // use 'inline' to add a ´<style>´ tag in html head || 'id-tag' to insert as textNode
   };
 
@@ -25,7 +25,7 @@ function fourKay(params) {
   var len = typeof params !== 'undefined' && typeof params.maxWidth  !== 'undefined' ? params.maxWidth  : settings.maxWidth;
   var threshold = typeof params !== 'undefined' && typeof params.threshold !== 'undefined' ? params.threshold : settings.threshold;
   var aspectRatio = i;
-  var presision = typeof params !== 'undefined' && typeof params.presision !== 'undefined' ? params.presision : settings.presision;
+  var precision = typeof params !== 'undefined' && typeof params.precision !== 'undefined' ? params.precision : settings.precision;
   var lastFontSize = 0;
   var finalFontSize = 0;
   var finalMediaQuery = 0;
@@ -36,7 +36,7 @@ function fourKay(params) {
   for (i; i < len; (i = i + 1)) {
 
     // Set font-size to 'em'
-    finalFontSize = (i / aspectRatio).toPrecision(presision);
+    finalFontSize = (i / aspectRatio).toPrecision(precision);
 
     // Set media query values to 'em'
     finalMediaQuery = i / 16;
