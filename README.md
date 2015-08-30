@@ -12,7 +12,7 @@ The script supports the following parameters:
 * `minWidth` : where to start of, the default is `1440`
 * `maxWidth` : where to stop, the default is `4096`
 * `presision` : how exact em values are desired, the default is `2` which generates 19 lines of code
-* `codeOut` : which kind of output is desired, the default is `'console'` - can use `'inline'` which will inline a `<style>` tag in the site header containing the code or define a element ID eg. (´'result-div'´) to output the code in a paragraph containing the code
+* `codeOut` : which kind of output is desired, the default is `'console'` - can use `'inline'` which will inline a `<style>` tag in the site header containing the code or define a element ID eg. `'result-div'` to output the code in a paragraph containing the code
 
 ### Example
 `fourKay({
