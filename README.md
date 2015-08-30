@@ -2,6 +2,7 @@
 
 Script for generating media queries containing font-size values which will keep the site or app in a similar scale when viewing it on larger screens.
 
+Please note that your site should be build using EM values rather than PX values. PX values will not scale.
 
 ## Usage
 
