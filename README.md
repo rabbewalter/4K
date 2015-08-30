@@ -18,7 +18,7 @@ The script supports the following parameters:
 `fourKay({
   minWidth: 1440,
   maxWidth: 8000,
-  presision: 2,
+  precision: 2,
   codeOut: 'yourElementId'
 });`
 
