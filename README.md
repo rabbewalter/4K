@@ -5,6 +5,16 @@ Script for generating media queries containing font-size values which will keep 
 
 ## Usage
 
-Include ´fourKay.js´ on your site/app/local development environment and call the function using the code:
-´fourKay();´
+Include `fourKay.js` on your site/app/local development environment and call the function using the code:
+`fourKay();`
+
+The script supports the following parameters:
+`fourKay({
+  minWidth: 1234,
+  maxWidth: 4567,
+  presision: 2,
+  codeOut: yourChoise
+});`
+
+
 
