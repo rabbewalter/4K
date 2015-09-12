@@ -58,4 +58,55 @@ function throttle(delay, callback) {
  * Call 4K
  */
 
-fourKay({maxWidth:8000});
+// For console on page load
+//fourKay({maxWidth:8000});
+
+
+// Initiate form
+var $form = document.querySelectorAll('.tool-calc form')[0];
+
+
+// Form function
+function generateMq () {
+  
+  // check values in form
+  var min = document.getElementById('minWidth').value ? document.getElementById('minWidth').value : 1440;
+  var max = document.getElementById('maxWidth').value ? document.getElementById('maxWidth').value : 8000;
+  var resultDiv = 'generatedMq';
+  
+  // Empty previous result
+  document.getElementById(resultDiv).innerHTML = "";
+  
+  // generate
+  fourKay({
+    minWidth: min,
+    maxWidth: max,
+    codeOut: resultDiv
+  });
+};
+
+
+
+
+
+
+
+
+// Add events to the form
+
+
+
+$form.addEventListener('submit', function (event) {
+  event.preventDefault();
+  generateMq()
+});
+
+
+
+
+
+
+
+
+
+

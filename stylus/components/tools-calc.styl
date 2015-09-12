@@ -1,0 +1,43 @@
+// Styles for calculatino form
+
+.tool-calc {
+  padding: 2em 1em 5em 1em;
+  text-align: center;
+  
+  // form fieldsets
+  fieldset {
+    padding: 0 1em 1em 0;
+    border: 0;
+    +mq-min($bp-m-up) {
+      float: left;
+      width: 40%;
+      padding: 0;
+    }
+    
+    // align content
+    input {
+      float: right;
+      width: 70%;
+      padding: 0.25em 0;
+      +mq-min($bp-m-up) {
+        width: auto;
+      }
+    }
+    
+    label {
+      display: inline-block;
+      margin-top: 0.35em;
+    }
+  }
+}
+
+// results
+#generatedMq {
+  margin-top: 2em;
+  text-align: left;
+  background: rgb(226, 226, 226);
+  
+  p {
+    padding: 1em;
+  }
+}
