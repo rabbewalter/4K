@@ -58,3 +58,4 @@ function throttle(delay, callback) {
  * Call 4K
  */
 
+fourKay({maxWidth:8000});
