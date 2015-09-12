@@ -1,0 +1,31 @@
+/* Example file of a Article component */
+
+.article {
+  padding: $global-padding;
+  background: rgba(2555, 255, 255, 0.8);
+}
+
+.article__header {
+  margin-bottom: 1em;
+  color: $gray-dark;
+  p {
+    font-size: 1.25em;
+    +mq-min($bp-s-up) {
+      font-size: 1.1em;
+    }
+  }
+}
+
+.article__aside {
+  margin-top: 2em;
+}
+
+.article__aside-title {
+  margin-bottom: 1em;
+}
+
+
+// Additional examples
+.article__title {}
+.article__footer {}
+.article__quote {}

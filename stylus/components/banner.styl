@@ -1,0 +1,61 @@
+// Banner styles
+.banner {
+  width: 100vw;
+  height: 90vh;
+  min-height: 30em;
+  padding-top: 30vh;
+  
+  text-align: center;
+}
+
+.banner__prefix {
+  font-size: 2em;
+  svg {
+    width: 1em;
+    margin-top: -0.1em;
+    fill: rgb(97, 97, 97);
+  }
+}
+
+
+.banner__title {
+  font-size: 10em;
+}
+
+.banner__em {
+  position: relative;
+  &::after {
+    content: "em";
+    position: absolute;
+    top: 60%;
+    left: -3em;
+    font-size: 5%;
+  }
+}
+
+.banner__px {
+  position: relative;
+
+  // override em font size
+  font-size: 160px;
+  &::after {
+    content: "px";
+    position: absolute;
+    top: 60%;
+    right: -3em;
+    font-size: 5%;
+  }
+}
+
+
+.banner__suffix {
+  font-size: 2em;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+// Measurements; display window widht in px values
+.measurements {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+
+  color: rgb(212, 210, 210);
+  
+  overflow-x: hidden;
+  z-index: -1;
+  [class*="m-"] {
+    position: relative;
+    height: 10vh;
+    min-height: 1em;
+    padding-top: 1em;
+    margin-top: -0.1em;
+
+    border-right: 0.1em solid rgb(212, 210, 210);
+    border-bottom: 0.1em solid rgb(212, 210, 210);
+
+    // create shaddow
+    &::after {
+      content: "";
+      position: absolute;
+      top: 1%;
+      right: 0.3125em;
+      display: block;
+      width: 0.1em;
+      height: 90%;
+      
+      box-shadow: 0 0 1em black;
+      z-index: -1;
+      
+      border-radius: 50%;
+    }
+
+    // center text
+    span {
+      position: absolute;
+      top: 50%;
+      right: 1em;
+      
+      transform: translate(0, -50%);
+    }
+  }
+}
+
+
+.m-8000 {
+  width: 8000px;
+  background: rgb(245, 245, 245);
+}
+
+.m-7000 {
+  width: 7000px;
+  background: rgb(245, 245, 245);
+}
+
+.m-6000 {
+  width: 6000px;
+  background: rgb(245, 245, 245);
+}
+
+.m-5000 {
+  width: 5000px;
+  background: rgb(245, 245, 245);
+}
+
+.m-4000 {
+  width: 4000px;
+  background: rgb(245, 245, 245);
+}
+
+.m-3000 {
+  width: 3000px;
+  background: rgb(245, 245, 245);
+}
+
+.m-2000 {
+  width: 2000px;
+  background: rgb(245, 245, 245);
+}
+
+.m-1000 {
+  width: 1000px;
+  background: rgb(245, 245, 245);
+}
+
+.m-500 {
+  width: 500px;
+  margin-top: -0.06em;
+  background: rgb(245, 245, 245);
+}
