@@ -71,7 +71,7 @@ function generateMq () {
   
   // check values in form
   var min = document.getElementById('minWidth').value ? document.getElementById('minWidth').value : 1440;
-  var max = document.getElementById('maxWidth').value ? document.getElementById('maxWidth').value : 8000;
+  var max = document.getElementById('maxWidth').value && document.getElementById('maxWidth').value ?document.getElementById('maxWidth').value : 8000;
   var resultDiv = 'generatedMq';
   
   // Empty previous result
@@ -98,7 +98,7 @@ function generateMq () {
 
 $form.addEventListener('submit', function (event) {
   event.preventDefault();
-  generateMq()
+  generateMq();
 });
 
 

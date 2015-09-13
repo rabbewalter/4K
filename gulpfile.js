@@ -101,4 +101,4 @@ gulp.task('scripts', function () {
 
 
 // Initiate default
-gulp.task('default', ['scripts', 'css', 'print', 'server', 'styles']);
+gulp.task('default', [/*'scripts', */'css', 'print', 'server', 'styles']);
