@@ -32,10 +32,15 @@ function fourKay(params) {
   var codeOut = typeof params !== 'undefined' && typeof params.codeOut !== 'undefined' ? params.codeOut : settings.codeOut;
   var inlineCSS = '';
 
-  // Default min value
+  // Default min and max valuesset
   if (i <= 1439) {
     i = 1440;
-    alert('Sorry, ' + i + 'px is the recomended miminum value');
+    alert('Sorry, ' + i + 'px is the recommended minimum value…'); //(87.5em)
+  }
+
+  if (len >= 8499) {
+    len = 8500;
+    alert('Sorry, ' + len + 'px is the recommended maxinum value for now.');  //(531.25em) 
   }
   
   // Generate media query list containing breakpoints and font-size values
